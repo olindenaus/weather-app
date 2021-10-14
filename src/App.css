@@ -1,38 +1,49 @@
 .App {
-  text-align: center;
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, #189AB4 0%, rgba(74,102,147,0.2231267507002801) 56%, #D4F1F4 100%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    min-height: 340px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.weather__inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-width: 240px;
+    max-width: 500px;
+    min-height: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.fade-enter{
+    opacity: 0;
+ }
+ .fade-exit{
+    opacity: 1;
+ }
+ .fade-enter-active{
+    opacity: 1;
+ }
+ .fade-exit-active{
+    opacity: 0;
+ }
+ .fade-enter-active {
+    transition: opacity 300ms;
+ }
+ .fade-exit-active{
+    transition: opacity 300ms;
+ }

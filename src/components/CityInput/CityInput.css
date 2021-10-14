@@ -1,0 +1,45 @@
+.city-input {
+    max-width: 340px;
+    min-width: 150px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: inherit;
+    max-height: 44px;
+}
+
+.city-input__field {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #189AB4;
+    padding: 8px 14px;
+    border-radius: 2px;
+    background-color: inherit;
+    color:#05445E;
+    position: relative;
+}
+
+.city-input__field::placeholder {
+    color: #189AB4;
+}
+
+.city-input__field:focus+.city-input__underline {
+    transform: scale(1);
+}
+
+.city-input__underline {
+  background-color: #05445E;
+  display: inline-block;
+  height: 2px;
+  left: 50px;
+  margin-top: -2px;
+  transform: scale(0, 1);
+  transition: all 0.3s linear;
+  width: 100%;
+}

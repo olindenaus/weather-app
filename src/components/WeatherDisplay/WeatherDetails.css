@@ -1,0 +1,20 @@
+.weather-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 12px;
+    background-color: inherit;
+    padding-bottom: 24px;
+}
+
+.weather-details__grid {
+    min-width: 90%;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: auto;
+    column-gap: 20%;
+    row-gap: 6px;
+    justify-items: left;
+}
